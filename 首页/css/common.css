@@ -18,33 +18,40 @@ a{
 html,body{
 	width: 100%;
 }
+
 .header{
 	width: 1000px;
-	padding:10px 20px;
+	padding:0px 20px;
 	margin: 0px auto;
+}
+.header img{
+	vertical-align:middle;
 }
 .conta{
 	float: right;
 	font-size: 20px;
 	line-height: 95px;
-	font-weight: 500px;
 	color: #195591;
 }
 .conta img{
 	width: 24px;
-	position: relative;
-	top: 3px;
 }
-
 .header ul{
 	margin-right: 25px;
 	float: right;
 }
 .header li{
 	display: inline-block;
-	width: 95px;
+	width: 110px;
 	height: 95px;
 	text-align: center;
+	cursor: pointer;
+}
+.header li:nth-child(1){
+	background: #195591;
+}
+.header li:nth-child(1) a{
+	color: #fff;
 }
 .header a{
 	font-size: 18px;
@@ -53,10 +60,11 @@ html,body{
 	color: #505050;
 }
 .header li:hover{
-	border-bottom: 2px solid #195591;
+	/*border-bottom: 2px solid #195591;*/
+	background: #195591;
 }
 .header li:hover a{
-	color: #195591;
+	color: #fff;
 }
 .footer{
 	width: 100%;
@@ -113,16 +121,29 @@ html,body{
 	word-wrap:break-word;
 	text-align: left;
 }
-.wrap1 div{
+.wrap1 a{
+	display: block;
 	width: 115px;
 	height: 40px;
+	color: #fff;
 	text-align: center;
 	line-height: 40px;
 	border-radius: 3px;
 	border: 2px solid #fff;
+	position: relative;
 }
+/*.wrap1 a:houver::after{
+ 	content: "";
+ 	width: 100%;
+ 	height: 2px;
+ 	background: #fff;
+ 	position: absolute;
+ 	top: 100%;
+ 	left: 0;
+}*/
 .case1{
-	margin-bottom: 30px;
+	margin-top: 40px;
+	/*margin-bottom: 30px;*/
 	height: 52px;
 	position: relative;
 }
@@ -135,10 +156,20 @@ html,body{
 	display: inline-block;
 	vertical-align: top;
 }
-.case1 p>span:nth-child(3){
+.case1 p>a:nth-child(3){
 	font-size: 12px;
 	line-height: 40px;
+	color: #fff;
 	vertical-align: bottom;
 	word-wrap:break-word;
 	position: absolute;
+}
+.copyright{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	text-align: center;
+	color: #fff;
+	background: #022f59;
 }
