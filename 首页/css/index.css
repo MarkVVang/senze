@@ -136,10 +136,11 @@
 	vertical-align: top;
 	position: relative;
 	cursor: pointer;
+	text-align: center;
 }
 .pic1{
-	max-width: 160px;
-	max-height: 160px;
+	width: 160px;
+	height: 160px;
 }
 .hidden{
 	display: inline-block;
@@ -150,31 +151,37 @@
 	left: 30px;
 	text-align: center;
 	background: rgba(25,85,145,0.7);
-	box-shadow: 0 0 15px #195591;
+	/*box-shadow: 0 0 15px #195591;*/
 	visibility: hidden;
 }
-.hidden img{
+.show img:nth-of-type(2){
 	display: inline-block;
-	max-width: 45px;
-	max-width: 45px;
+	width: 45px;
+	width: 45px;
 	vertical-align: middle;
-	position: relative;
-	top: 27.5px;
+	position: absolute;
+	top: 57.5px;
+	left: 57.5px;
 	visibility: hidden;
 }
-.hidden p{
+.show p{
 	font-size: 14px;
 	color: #fff;
 	position: relative;
-	top: 36px;
+	top: -24px;
+	z-index: 2;
+	visibility: hidden;
 }
 .show li:hover>.hidden{
 	visibility: visible;
 	transform: scale(1.6,1.6);
 	box-shadow: 0 0 0 #195591;
-	transition: transform,box-shadow 0.5s,0.5s;
+	transition: transform,box-shadow 0.25s,0.25s;
 }
-.show li:hover>.hidden img{
+.show li:hover>.hidden+img{
+	visibility: visible;
+}
+.show li:hover>p{
 	visibility: visible;
 }
 .video dl{
@@ -234,4 +241,19 @@
 	top: 0;
 	left: 44px;
 	background: #787b86;
+}
+.iw_poi_title{
+	color:#CC5522;
+	font-size:14px;
+	font-weight:bold;
+	overflow:hidden;
+	padding-right:13px;
+	white-space:nowrap
+}
+.iw_poi_content{
+	font:12px arial,sans-serif;
+	overflow:visible;
+	padding-top:4px;
+	white-space:-moz-pre-wrap;
+	word-wrap:break-word
 }

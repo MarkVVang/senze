@@ -68,48 +68,51 @@ html,body{
 }
 .footer{
 	width: 100%;
-	padding-bottom: 30px;	
+	/*padding-bottom: 30px;	*/
 	background: #195591;
 	color: #fff;
 }
 .footer>div{
 	width: 1000px;
 	margin: 0 auto;
-	padding: 10px 20px;
+	padding: 10px 20px 5px 20px;
 }
 .wrap1{
 	display: inline-block;
 	width: 240px;
-	margin-right: 50px;
+	margin-right: 30px;
 	float: left;
 }
 .wrap2{
 	display: inline-block;
-	width: 400px;
+	width: 320px;
 	vertical-align: top;
 }
 .wrap3{
 	display: inline-block;
 	width: 240px;
 	vertical-align: top;
-	float: right;
+	/*float: right;*/
 }
 .wrap3 p{
-	font-size: 14px;
+	font-size: 12px;
+	display: inline-block;
 }
+/*.wrap p:nth-of-type(2){
+	float: right;
+}*/
 .wrap3 img{
 	vertical-align: top;
-	height: 20px;
-	margin: 5px;
+	height: 16px;
+	margin: 2px;
 	position: relative;
-	bottom: 6px;
+	bottom: 4px;
 }
-.map{
-	width: 240px;
-	height: 120px;
-	margin-top: 5px;
-	background: #505050;
-	color: #000;
+#dituContent{
+	width: 320px;
+	height: 150px;
+	margin-top: 2px;
+	border:#ccc solid 1px;
 }
 .footer h3{
 	margin-bottom: 20px;
@@ -142,27 +145,32 @@ html,body{
  	left: 0;
 }*/
 .case1{
-	margin-top: 40px;
-	/*margin-bottom: 30px;*/
-	height: 52px;
+	/*margin-top: 40px;*/
+	margin-bottom: 10px;
+	/*height: 80px;*/
 	position: relative;
 }
 
 .case1 img{
 	display: inline-block;
+	height: 80px;
 }
 .case1 p{
+	padding: 5px 0px;
 	font-size: 14px;
 	display: inline-block;
 	vertical-align: top;
 }
-.case1 p>a:nth-child(3){
+/*.case1>p span{
+	vertical-align: top;
+}*/
+.case1 p>a:nth-child(5){
 	font-size: 12px;
-	line-height: 40px;
+	/*line-height: 40px;*/
 	color: #fff;
 	vertical-align: bottom;
 	word-wrap:break-word;
-	position: absolute;
+	/*position: absolute;*/
 }
 .copyright{
 	width: 100%;
