@@ -47,12 +47,12 @@ html,body{
 	text-align: center;
 	cursor: pointer;
 }
-.header li:nth-child(1){
+/*.header li:nth-child(1){
 	background: #195591;
 }
 .header li:nth-child(1) a{
 	color: #fff;
-}
+}*/
 .header a{
 	font-size: 18px;
 	font-weight: 300;
