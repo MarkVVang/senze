@@ -19,9 +19,9 @@
 	float: right;
 	width: 100%;
 }
-.about div {
+/*.about div {
 	width: 
-}
+}*/
 .slogan{
 	font-size: 90px;
 	font-weight: 900;
@@ -329,24 +329,43 @@
 	width: 300px;
 	height: 245px;
 }
-.videowrap>div div::after{
+/*.videowrap>div>div::after{
 	content: "2016.10.23香蕉娱乐TRAINEE 青岛海信广场";
 	width: 260px;
 	height: 70px;
 	position: absolute;
-	top: 200px;
+	top: 210px;
 	left: 20px;
 	font-size: 16px;
-	line-height: 28px;
+	line-height: 26px;
 	color: #fff;
 	background: #000;
 	text-align: center;
+}*/
+.videowrap>div>div span{
+	width: 260px;
+	/*height: 70px;*/
+	position: absolute;
+	top: 210px;
+	left: 20px;
+	background: #000;
+	text-align: center;
 }
-
-
-
-
-
+.videowrap>div>div span a{
+	font-size: 16px;
+	line-height: 26px;
+	color: #fff;
+}
+.videowrap>div>div span:hover{
+	background: #fff;
+}
+.videowrap>div>div span:hover a{
+	color: #000;
+	text-decoration: underline;
+}
+.videopic img{
+	width: 100%;
+}
 
 
 .last{
