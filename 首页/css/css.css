@@ -234,6 +234,63 @@
 	width: 446px;
 	height: 296px;
 }
+.advwrap{
+	width: 1000px;
+	margin: 0 auto;
+	padding: 15px 20px 15px 20px;
+}
+.ouradv>p{
+	font-size: 26px;
+	margin-bottom: 15px;
+}
+.ouradv>div{
+	padding: 20px 0 25px 25px;
+}
+.ouradv>div div{
+	width: 250px;
+}
+.ouradv>div div img{
+	display: inline-block;
+	/*line-height: 50px;*/
+}
+.ouradv>div div{
+	display: inline-block;
+}
+.ouradv>div p{
+	display: inline-block;
+	color: #505050;
+	word-break: break-all;
+	vertical-align: top;
+	/*text-align: right;*/
+}
+.advex div{
+	/*display: block;*/
+	width: 100%;
+	margin-bottom: 30px; 
+	font-size: 32px;
+	/*border: 1px solid red;*/
+}
+.advex p{
+	line-height: 22px;
+}
+/*.advex div img{
+	position: absolute;
+	top:5px;
+}*/
+/* .advex p{
+	width: 
+} */
+.advex{
+	background: url(../images/weishi.jpg) no-repeat right 0px;
+	/*background-position: right;*/
+	margin-bottom: 50px;
+}
+
+
+
+
+
+
 .casewrap{
 	width: 100%;
 	/*background: #404040*/;
@@ -366,8 +423,6 @@
 .videopic img{
 	width: 100%;
 }
-
-
 .last{
 	width: 50px;
 	height: 6px;
