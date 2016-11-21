@@ -1,5 +1,6 @@
 /* 首页 */
 .header li:nth-child(1){
+	/*background: rgba(25,85,145,0.5);*/
 	background: #195591;
 }
 .header li:nth-child(1) a{
@@ -317,34 +318,35 @@
 .about {
 	width: 100%;
 }
-.about img{
+/*.about img{
 	float: right;
 	width: 100%;
-}
-.about h2::after{
+}*/
+/*.about h2::after{
 	content: "";
 	width: 110px;
 	border-bottom: 2px solid #195591;
 	position: absolute;
 	top: 20px;
 	left: 0px;
-}
+}*/
 .about>div>div{
 	width: 1000px;
 	margin: 0 auto;
 	font-size: 16px;
-	line-height: 46px;
+	line-height: 36px;
 	text-align: left;
 }
 
 
 /*优势*/
 .advwrap{
-	width: 1000px;
-	margin: 0 auto;
-	padding: 15px 20px 15px 20px;
+	width: 100%;
+	/*margin: 0 auto;
+	padding: 15px 20px 15px 20px;*/
 }
-.ouradv>p{
+
+/*.ouradv>p{
 	font-size: 26px;
 	margin-bottom: 15px;
 }
@@ -365,19 +367,67 @@
 	color: #505050;
 	word-break: break-all;
 	vertical-align: top;
+}*/
+.advex{
+	width: 1000px;
+	margin: 0 auto;
+	padding: 10px 20px 0px 20px;
+	
 }
 .advex div{
-	width: 100%;
+	/*width: 100%;*/
+	
+	/*padding-bottom: 3px;*/
 	margin-bottom: 30px; 
-	font-size: 32px;
+	font-size: 34px;
+	background: url(../images/advicon.png) no-repeat;
+}
+.advex:nth-of-type(1){
+	height: 215px;
+	background: url(../images/weishi.jpg) no-repeat right 14px;
+}
+.advex:nth-of-type(1) div{
+	padding-left: 58px;
+	background-position: 0px -192px;
+}
+.advex:nth-of-type(2){
+	height: 320px;
+	background: url(../images/weiyuan.png) no-repeat left top;	
+}
+.advex:nth-of-type(2) div{
+	/*float: right;*/
+	margin-left: 634px;
+	padding-left: 48px;
+	background-position: 0px -144px;
+}
+.advex:nth-of-type(2) p{
+	margin-left: 650px;
+}
+.advex:nth-of-type(3){
+	height: 260px;
+	background: url(../images/weiyou.jpg) no-repeat right 14px;
+}
+.advex:nth-of-type(3) div{
+	padding-left: 58px;
+	background-position: 0px -97px;
+}
+.advex:nth-of-type(2){
+	height: 320px;
+	background: url(../images/weigeng.jpg) no-repeat left top;	
+}
+.advex:nth-of-type(2) div{
+	/*float: right;*/
+	margin-left: 634px;
+	padding-left: 48px;
+	background-position: 0px -144px;
 }
 .advex p{
-	line-height: 22px;
+	line-height: 30px;
 }
-.advex{
+/*.advex{
 	background: url(../images/weishi.jpg) no-repeat right 0px;
 	margin-bottom: 50px;
-}
+}*/
 
 
 /*案例*/

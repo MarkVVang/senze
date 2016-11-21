@@ -1,8 +1,8 @@
-/*é‡ç½®æ ·å¼*/
+/*ÖØÖÃÑùÊ½*/
 body{
 	margin:0px;
 	padding:0px;
-	font-family: Helvetica, Tahoma, Arial,  "Microsoft YaHei", "å¾®è½¯é›…é»‘", SimSun, "å®‹ä½“", Heiti, "é»‘ä½“", sans-serif;
+	font-family: Helvetica, Tahoma, Arial,  "Microsoft YaHei", "Î¢ÈíÑÅºÚ", SimSun, "ËÎÌå", Heiti, "ºÚÌå", sans-serif;
 }
 ul,li{
 	margin:0px;
@@ -23,10 +23,19 @@ hr{
 	color: #e5e5e5;
 	border: 1px solid #e5e5e5;
 }
-/* å¤´éƒ¨ */
+/* Í·²¿ */
 .header{
 	width: 1000px;
 	padding:0px 20px;
+	margin: 0px auto;
+}
+/*.header{
+	width: 100%;
+	background: #195591;
+}*/
+.header>div{
+	width: 1000px;
+	padding: 0px 20px;
 	margin: 0px auto;
 }
 .header img{
@@ -62,7 +71,7 @@ hr{
 	font-size: 18px;
 	font-weight: 300;
 	line-height: 95px;
-	color: #505050;
+	color: #195591;
 }
 .header li:hover{
 	/*border-bottom: 2px solid #195591;*/
@@ -71,7 +80,7 @@ hr{
 .header li:hover a{
 	color: #fff;
 }
-/* å°¾éƒ¨ */
+/* Î²²¿ */
 .footer{
 	width: 100%;
 	/*padding-bottom: 30px;	*/
