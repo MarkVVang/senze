@@ -9,9 +9,9 @@
 .main>div:nth-child(1){
 	position: relative;
 }
-/*.banner{
+.banner{
 	width: 100%;
-}*/
+}
 /*#inner{
 	height: 399px;
 	position: relative;
