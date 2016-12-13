@@ -105,19 +105,19 @@
         .arrow:hover{
             background: rgba(0,0,0,0.5);
         }
-.adv,.case,.videoContent,.about>div{
+.adv,.case,.videoContent/*,.about>div*/{
 	padding: 20px 20px 25px 20px;
 	margin: 0 auto;
 	text-align: center;
 	color: #505050;
 }
-.adv h1,.case h1,.videoContent h1,.about h1{
+.adv h1,.case h1,.videoContent h1/*,.about h1*/{
 	font-size: 26px;
 	font-weight: 300;
 	margin-top: 0px;
 	margin-bottom: 10px;
 }
-.adv h2,.case h2,.videoContent h2,.about h2{
+.adv h2,.case h2,.videoContent h2/*,.about h2*/{
 	display: inline-block;
 	width: 110px;
 	margin: 0px auto;
@@ -461,7 +461,7 @@
 	top: 20px;
 	left: 0px;
 }*/
-.about>div>div{
+/*.about>div>div{
 	width: 1000px;
 	margin: 0 auto;
 	font-size: 16px;
@@ -472,8 +472,41 @@
 	display: inline-block;
 	width: auto;	
 	height: 200px;
+}*/
+.about>div{
+	width: 1000px;
+	margin: 0 auto;
+	padding: 20px 20px;
 }
-
+.about>div>div>div:nth-of-type(1){
+	font-size: 14px;
+	color: #757575;
+	line-height: 24px;
+	margin-left: 10px;
+	margin-bottom: 20px;
+	width: 718px;
+	display: inline-block;
+	vertical-align: top;
+}
+.about>div>div>div{
+	font-size: 14px;
+	color: #757575;
+	line-height: 24px;
+	margin-bottom: 20px;
+}
+.about>div>div img{
+	display: inline-block;
+	height: 150px;
+	margin-bottom: 10px;
+}
+.about>div>div p{
+	font-size: 16px;
+	color: #195591;
+	margin-bottom: 10px;
+}
+.about>div>div span{
+	font-size: 18px;
+}
 /*优势*/
 .advwrap{
 	width: 100%;
