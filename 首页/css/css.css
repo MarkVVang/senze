@@ -10,7 +10,9 @@
 	position: relative;
 }
 .banner{
-	width: 100%;
+	display: block;
+	width: 1349px;
+	margin: 0 auto;
 }
 /*#inner{
 	height: 399px;
@@ -79,9 +81,9 @@
             color: rgba(0,0,0,0);
             font-size: 0px;
     		display: inline-block;
-   			width: 16px;
-    		height: 16px;
-    		border-radius:8px;
+   			width: 10px;
+    		height: 10px;
+    		border-radius:5px;
     		cursor: pointer;
         }
         .paganation .selected{
@@ -119,7 +121,7 @@
 	display: inline-block;
 	width: 110px;
 	margin: 0px auto;
-	font-size: 20px;
+	font-size: 22px;
 	font-weight: 300;
 	line-height: 0;
 	position: relative;
@@ -466,7 +468,11 @@
 	line-height: 36px;
 	text-align: left;
 }
-
+.about>div img{
+	display: inline-block;
+	width: auto;	
+	height: 200px;
+}
 
 /*优势*/
 .advwrap{
@@ -557,7 +563,7 @@
 	margin-left: 340px;
 }
 .advex p{
-	line-height: 30px;
+	line-height: 28px;
 }
 /*.advex{
 	background: url(../images/weishi.jpg) no-repeat right 0px;
@@ -570,7 +576,7 @@
 	width: 100%;
 }
 .casewrap img{
-	width: 100%;
+	width: 1349px;
 	vertical-align: top;
 }
 .casewrap ul{
@@ -607,22 +613,21 @@
 	cursor: pointer;
 	vertical-align: top;
 }*/
-.casewrap>div>dl>div{
+.casecont{
 	width: 320px;
-	padding-right: 10px;
-	padding-bottom: 15px;
-	display: inline-block;
-	vertical-align: top;
-}
-.casewrap dd{
 	padding: 15px 15px 0px 15px;
-	margin-bottom: 15px;
-	/*border: 1px solid #ccc;*/
+	margin-bottom: 10px;
 	border-radius: 5px;
 	box-shadow: 0 0 2px #505050;
 	text-align: center;
-	cursor: pointer;
+	cursor: pointer;	
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
 }
+/*.casewrap dd{
+
+}*/
 /*.casewrap dd{
 	width: 290px;
 	margin-right: 10px;
@@ -687,7 +692,7 @@
 	width: 1000px;
 
 }*/
-.videowrap>div div{
+.videowrap>div>div{
 	display: inline-block;
 	/*width: 300px;
 	height: 245px;*/
@@ -701,27 +706,32 @@
 	height: 245px;
 }
 .videowrap>div>div span{
-	width: 260px;
+	width: 300px;
+	padding: 0 5px;
 	position: absolute;
 	top: 250px;
-	left: 20px;
-	background: #000;
+	left: 0px;
+	box-sizing: border-box;
 	text-align: center;
 }
-.videowrap>div>div span a{
+.videowrap>div>div span{
 	font-size: 16px;
-	line-height: 26px;
-	color: #fff;
+	line-height: 24px;
+	color: #666;
+	cursor: default;
 }
-.videowrap>div>div span:hover{
+.videowrap>div>div:hover span{
+	color: #000;
+}
+/*.videowrap>div>div span:hover{
 	background: #fff;
-}
-.videowrap>div>div span:hover a{
+}*/
+/*.videowrap>div>div span:hover a{
 	color: #000;
 	text-decoration: underline;
-}
+}*/
 .videopic img{
-	width: 100%;
+	width: 1349px;
 }
 .iw_poi_title{
 	color:#CC5522;
