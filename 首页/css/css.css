@@ -1,11 +1,11 @@
 /* 首页 */
-.header li:nth-child(1){
-	/*background: rgba(25,85,145,0.5);*/
+/*.header li:nth-child(1){
+	background: rgba(25,85,145,0.5);
 	background: #195591;
-}
-.header li:nth-child(1) a{
+}*/
+/*.header li:nth-child(1) a{
 	color: #fff;
-}
+}*/
 .main>div:nth-child(1){
 	position: relative;
 }
@@ -103,16 +103,24 @@
         .arrow:hover{
             background: rgba(0,0,0,0.5);
         }
-.adv,.case,.videoContent,.about>div{	
+.adv,.case,.videoContent,.about>div{
 	padding: 20px 20px 25px 20px;
 	margin: 0 auto;
 	text-align: center;
 	color: #505050;
 }
+.adv h1,.case h1,.videoContent h1,.about h1{
+	font-size: 26px;
+	font-weight: 300;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
 .adv h2,.case h2,.videoContent h2,.about h2{
 	display: inline-block;
 	width: 110px;
 	margin: 0px auto;
+	font-size: 20px;
+	font-weight: 300;
 	line-height: 0;
 	position: relative;
 }
@@ -124,10 +132,12 @@
 	top: 20px;
 	left: 0px;
 }
-.adv p{
-	font-size: 38px;
+.adv>p{
 	margin-top: 10px;
-	color: #505050;
+	margin-bottom: 20px;
+	color: #696969;
+	font-size:14px;
+	line-height: 1;
 }
 .case h2::after{
 	content: "";
@@ -145,14 +155,13 @@
 	top: 20px;
 	left: 0px;
 }
-.adv span{
+/*.adv span{
 	display: inline-block;
-	width: 800px;
-	margin-top: 15px;
-	font-size:18px;
-	line-height: 26px;
-	/*text-align: left;*/
-}
+	width: 960px;
+	margin-top: 5px;
+	font-size:14px;
+	line-height: 20px;
+}*/
 .ex{
 	width: 1000px;
 	margin: 20px auto 0 auto;
@@ -170,10 +179,13 @@
 .ex>div{
 	display: inline-block;
 	width: 320px;
-	margin-top: 10px;
+	margin-top: 30px;
+	/*margin-right: 50px;*/
 	vertical-align: top;
 }
+/*.ex>div{
 
+}*/
 /*.ex>div>div:nth-child(1){
 	width: 0px;
 	margin: 0px auto;
@@ -222,14 +234,26 @@
 	left: 0px;
 }
 .ex>div>p:nth-of-type(1){
-	margin-top: 35px;
-	font-size: 20px;
-	
+	margin-top: 40px;
+	font-size: 18px;
+	color: #000;
 }
+/*.ex>div>p:nth-of-type(1)::after{
+	content: "";
+	width: 100px;
+	height: 2px;
+	background: #195591;
+	position: absolute;
+	top: 28px;
+	left: 110px;
+}*/
 .ex>div>p:nth-of-type(2){
+	display: inline-block;
+	width: 260px;
+	margin: 10px auto 0px auto;
 	font-size: 14px;
-	color: #555;
-	margin-top: 15px;
+	color: #696969;
+	/*margin-top: 30px;*/
 }
 
 
@@ -249,6 +273,20 @@
 	width: 960px;
 	margin: 0px auto;
 }
+/*#detail{
+	width: 100%;
+	height:100%;
+	margin: 0px auto;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: rgba(0,0,0,0.2);
+	border: 1px solid red;
+	z-index: 2;
+}
+.detail div{
+	display: inline-block;
+}*/
 .show li{
 	display: inline-block;
 	width: 160px;
@@ -263,7 +301,7 @@
 	height: 160px;
 }
 .hidden{
-	display: inline-block;
+	/*display: inline-block;*/
 	width: 100px;
 	height: 100px;
 	position: absolute;
@@ -273,7 +311,7 @@
 	background: rgba(25,85,145,0.7);
 	visibility: hidden;
 }
-.show img:nth-of-type(2){
+.show ul img:nth-of-type(2){
 	display: inline-block;
 	width: 45px;
 	width: 45px;
@@ -283,7 +321,7 @@
 	left: 57.5px;
 	visibility: hidden;
 }
-.show p{
+.show ul p{
 	font-size: 14px;
 	color: #fff;
 	position: relative;
@@ -467,10 +505,11 @@
 }
 .advex div{
 	/*width: 100%;*/
-	
+	height: 45px;
+	line-height: 45px;
 	/*padding-bottom: 3px;*/
 	margin-bottom: 30px; 
-	font-size: 34px;
+	font-size: 26px;
 	background: url(../images/advicon.png) no-repeat;
 }
 .advex:nth-of-type(1){
@@ -551,6 +590,10 @@
 	color: #fff;
 	background: #505050;
 }
+.casewrap li:first-child{
+	color: #fff;
+	background: #505050;
+}
 .casewrap>div{
 	width: 1000px;
 	margin: 0 auto;
@@ -572,11 +615,12 @@
 	vertical-align: top;
 }
 .casewrap dd{
-	padding: 10px 15px 0px 15px;
+	padding: 15px 15px 0px 15px;
 	margin-bottom: 15px;
 	/*border: 1px solid #ccc;*/
 	border-radius: 5px;
 	box-shadow: 0 0 2px #505050;
+	text-align: center;
 	cursor: pointer;
 }
 /*.casewrap dd{
@@ -590,31 +634,34 @@
 	cursor: pointer;
 }*/
 .casewrap dd p{
-	font-size: 20px;
-	font-weight: bold;
-	margin-bottom: 5px;
-	color: #505050;
+	font-size: 16px;
+	/*font-weight: bold;*/
+	margin: 5px auto;
+	/*color: #505050;*/
 	/*padding: 15px 15px 0px 15px;*/
 }
 .casewrap dd img{
 	width: 290px;
-	height: auto;
+	height: 215px;
 	/*margin-top: 4px;
 	margin-left: 15px;*/
 	/*padding: 10px 15px;*/
 }
-.casewrap span{
+.casecont span{
 	display: inline-block;
-	font-size: 12px;
+	font-size: 14px;
 	line-height: 20px;
+	color: #505050;
+	text-align: left;
 	/*padding: 4px 15px 10px 15px;*/
 }
-.casewrap dd div{
+.casebox dd div{
 	/*width: 100%;*/
 	height: 30px;
-	font-size: 14px;
+	font-size: 12px;
 	line-height: 30px;
 	color: #999;
+	text-align: left;
 	/*padding-left: 15px;*/
 	border-top: 1px solid #d5d2d2;
 	/*background: #f6f6f6;*/

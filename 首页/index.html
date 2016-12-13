@@ -13,7 +13,7 @@
 <body>
 	<div class="content">
 		<div class="header">
-			<img src="images/logo_03.png">
+			<img src="images/logo_05.png">
 			<span class="conta">
 				<img src="images/icon_03.png">
 				联系电话：<b>0512-62986560</b>
@@ -94,7 +94,7 @@
 					<h1>SENZE ADVANTAGE</h1>
 					<h2>森泽优势</h2>
 					<hr>
-					<p>执行力+创意<br><span>团队核心成员均拥有多年活动策划经验，长期从事广告传媒、活动策划，展览展示行业，服务一线房地产、国内外企业以及消费类产品。<!-- 一家以创意为核心，强有力的执行力为保障的品牌策划公司。 --></span></p>
+					<!-- <p>执行力+创意<br><span>团队核心成员均拥有多年活动策划经验，长期从事广告传媒、活动策划，展览展示行业，服务一线房地产、国内外企业以及消费类产品。一家以创意为核心，强有力的执行力为保障的品牌策划公司。</span></p> -->
 					<div class="ex">
 						<div>
 							<!-- <div></div>
@@ -114,7 +114,7 @@
 							<div></div> -->
 							<div></div>
 							<p>创意</p>
-							<p>以创意为核心，致力于为客户及其品牌提供独树一帜的策划方案，并期望与客户建立长久、密切、深入的伴随式合作伙伴关系。</p>
+							<p><!-- 以创意为核心， -->致力于为客户及其品牌提供独树一帜的策划方案，并期望与客户建立长久、密切、深入的伴随式合作伙伴关系。</p>
 						</div>
 						<div>
 							<!-- <div></div>
@@ -126,13 +126,18 @@
 							<p>大活动策划</p>
 							<p>全面解读品牌的核心价值，塑造企业品牌形象，提升品牌认同感与美誉度。</p>
 						</div>
-					</div>
+					</div>					
 				</div>
 				<div class="case">
 					<h1>SENZE CASE</h1>
 					<h2>森泽案例</h2>
 					<hr>
 					<div class="show">
+						<!-- <div id="detail">
+							<div>TITTLE</div>
+							<div>TXT</div>
+							<div></div>
+						</div> -->
 						<ul>
 							<li>
 								<img class="pic1" src="images/10_03.png">
@@ -549,5 +554,35 @@
                 spanList[i].className="";
             }
         }
+    window.onload=function(){
+        var oDiv=document.getElementById('detail');
+        oDiv.onclick=function(){
+            var iHeight=css(oDiv,'height');
+            var iTarget=-iHeight;
+            var timer=null;
+             
+            timer=setInterval(function(){
+                var iTop=css(oDiv,'top');
+                var iSpeed=Math.floor((iTarget-iTop)/8);
+                var t=iTop+iSpeed;
+                if(iTop<=iTarget){
+                    clearInterval(timer);
+                }else{
+                    oDiv.style.top=t+'px'; 
+                }
+            },10);
+             
+             
+        }
+    }
+    function css(obj,attr){
+        var result;
+        if(obj.currentStyle){
+            result=obj.currentStyle[attr];
+        }else{
+            result=getComputedStyle(obj,false)[attr];
+        }
+        return parseInt(result);
+    }
 </script>
 </html>

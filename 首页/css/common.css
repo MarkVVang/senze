@@ -1,8 +1,8 @@
-/*ÖØÖÃÑùÊ½*/
+/*Ã–Ã˜Ã–ÃƒÃ‘Ã¹ÃŠÂ½*/
 body{
 	margin:0px;
 	padding:0px;
-	font-family: Helvetica, Tahoma, Arial,  "Microsoft YaHei", "Î¢ÈíÑÅºÚ", SimSun, "ËÎÌå", Heiti, "ºÚÌå", sans-serif;
+	font-family: Helvetica, Tahoma, Arial,  "Microsoft YaHei", "ÃŽÂ¢ÃˆÃ­Ã‘Ã…ÂºÃš", SimSun, "Ã‹ÃŽÃŒÃ¥", Heiti, "ÂºÃšÃŒÃ¥", sans-serif;
 }
 ul,li{
 	margin:0px;
@@ -23,7 +23,7 @@ hr{
 	color: #e5e5e5;
 	border: 1px solid #e5e5e5;
 }
-/* Í·²¿ */
+/*å¤´éƒ¨*/
 .header{
 	width: 1000px;
 	padding:0px 20px;
@@ -33,31 +33,32 @@ hr{
 	width: 100%;
 	background: #195591;
 }*/
-.header>div{
+/*.header>div{
 	width: 1000px;
 	padding: 0px 20px;
 	margin: 0px auto;
-}
+}*/
 .header img{
 	vertical-align:middle;
+	line-height: 70px;
 }
 .conta{
 	float: right;
-	font-size: 20px;
-	line-height: 95px;
+	font-size: 16px;
+	line-height: 70px;
 	color: #195591;
 }
 .conta img{
-	width: 24px;
+	width: 18px;
 }
 .header ul{
-	margin-right: 25px;
+	margin-right: 26px;
 	float: right;
 }
 .header li{
 	display: inline-block;
-	width: 110px;
-	height: 95px;
+	width: 96px;
+	/*padding: 15px 0px;*/
 	text-align: center;
 	cursor: pointer;
 }
@@ -68,19 +69,25 @@ hr{
 	color: #fff;
 }*/
 .header a{
-	font-size: 18px;
-	font-weight: 300;
-	line-height: 95px;
-	color: #195591;
+	font-size: 16px;
+	/*font-weight: 300;*/
+	/*height: 40px;*/
+	padding: 15px 0px;
+	line-height: 70px;
+	color: #ccc;
 }
-.header li:hover{
-	/*border-bottom: 2px solid #195591;*/
+.header a:visited{
+	color: #000;
+}
+/*.header li:hover{
+	border-bottom: 2px solid #195591;
 	background: #195591;
-}
+}*/
 .header li:hover a{
-	color: #fff;
+	color: #195591;
+	border-bottom: 2px solid #195591;
 }
-/* Î²²¿ */
+/* å°¾éƒ¨ */
 .footer{
 	width: 100%;
 	/*padding-bottom: 30px;	*/
