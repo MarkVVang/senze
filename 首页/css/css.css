@@ -544,7 +544,7 @@
 	width: 700px;
 	margin: 0 auto;
 	padding: 30px 20px 0px 20px;
-	
+	color: #505050;
 }
 .advex div{
 	/*width: 100%;*/
@@ -552,7 +552,7 @@
 	line-height: 45px;
 	/*padding-bottom: 3px;*/
 	margin-bottom: 30px; 
-	font-size: 26px;
+	font-size: 24px;
 	background: url(../images/advicon.png) no-repeat;
 }
 .advex:nth-of-type(1){
@@ -600,6 +600,7 @@
 	margin-left: 390px;
 }
 .advex p{
+	font-size:16px;
 	line-height: 28px;
 }
 /*.advex{
@@ -661,6 +662,7 @@
 	display: inline-block;
 	vertical-align: top;
 	box-sizing: border-box;
+	position: relative;
 }
 /*.casewrap dd{
 
@@ -678,11 +680,15 @@
 .casewrap dd p{
 	font-size: 16px;
 	/*font-weight: bold;*/
+	width: 290px;
 	margin: 5px auto;
 	line-height: 24px;
-	background: #505050;
+	background: rgba(80,80,80,0.8);
 	color: #fff;
 	border-radius: 4px;
+	position: absolute;
+	top: 201px;
+	left: 15px;
 	/*padding: 15px 15px 0px 15px;*/
 }
 .casewrap dd img{
