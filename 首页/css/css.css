@@ -112,7 +112,7 @@
 	color: #505050;
 }
 .adv h1,.case h1,.videoContent h1/*,.about h1*/{
-	font-size: 26px;
+	font-size: 22px;
 	font-weight: 300;
 	margin-top: 0px;
 	margin-bottom: 10px;
@@ -121,7 +121,7 @@
 	display: inline-block;
 	width: 110px;
 	margin: 0px auto;
-	font-size: 22px;
+	font-size: 20px;
 	font-weight: 300;
 	line-height: 0;
 	position: relative;
@@ -372,7 +372,7 @@
 .videoContent dd p{
 	font-size: 14px;
 	line-height: 20px;
-	color: #000;
+	color: #505050;
 }
 .videoContent dd a{
 	display: inline-block;
@@ -478,7 +478,7 @@
 	margin: 0 auto;
 	padding: 20px 20px;
 }
-.about>div>div>div:nth-of-type(1){
+.about>div>div>div{
 	font-size: 14px;
 	color: #757575;
 	line-height: 24px;
@@ -488,16 +488,20 @@
 	display: inline-block;
 	vertical-align: top;
 }
-.about>div>div>div{
+/*.about>div>div>div{
 	font-size: 14px;
 	color: #757575;
 	line-height: 24px;
 	margin-bottom: 20px;
-}
+}*/
 .about>div>div img{
 	display: inline-block;
-	height: 150px;
+	width: 267px;
 	margin-bottom: 10px;
+}
+.about>div>div img:nth-of-type(2){
+	width: 267px;
+	height: 150px;
 }
 .about>div>div p{
 	font-size: 16px;
@@ -675,7 +679,10 @@
 	font-size: 16px;
 	/*font-weight: bold;*/
 	margin: 5px auto;
-	/*color: #505050;*/
+	line-height: 24px;
+	background: #505050;
+	color: #fff;
+	border-radius: 4px;
 	/*padding: 15px 15px 0px 15px;*/
 }
 .casewrap dd img{
